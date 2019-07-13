@@ -142,7 +142,7 @@ msg = MIMEText(msg)
 print(msg)
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("hholder@xxx.com", "1324567890f")
-server.sendmail("hholder@xxx.com", "person2@wxxxxxeb.com",msg.as_string(), SUBJECT)
+server.login("hholder@xxx.com", "1234") #add a new email account to send the emails or use an existing one
+server.sendmail("hholder@xxx.com", "person2@wxxxxxeb.com",msg.as_string(), SUBJECT) #add the person who shall recieve the email
 server.sendmail("hholder@xxx.com", "person1xxxl@xxx.com", msg.as_string(), SUBJECT)
 server.quit()
